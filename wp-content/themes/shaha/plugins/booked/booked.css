@@ -1,0 +1,199 @@
+/* Calendar */
+table.booked-calendar tr.days th {
+	border: 1px solid #ddd !important;
+}
+table.booked-calendar td,
+table.booked-calendar td+td {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+/* Booked form */
+body .booked-form .field .checkbox-radio-block label {
+	padding-left: 1.4em;
+}
+body .booked-form .field .checkbox-radio-block label:before {
+	line-height: 0.6em;
+}
+
+/* Login form */
+#booked-page-form .login-remember input {
+	display: inline;
+	vertical-align:middle;
+}
+
+#booked-profile-page i.fa {
+	color: inherit;
+}
+
+/* User profile header */
+#booked-profile-page div.booked-profile-header {
+	padding: 0 0 2em;
+}
+#booked-profile-page div.booked-user-avatar {
+	width: 50px;
+	height:50px;
+}
+#booked-profile-page div.booked-user-avatar img {
+	-webkit-border-radius: 50%;
+	    -ms-border-radius: 50%;
+			border-radius: 50%;
+}
+#booked-profile-page .booked-user h3 strong {
+	font-weight:400;
+}
+
+/* User profile content */
+#booked-profile-page div.booked-tab-content {
+	-webkit-border-radius: 0;
+	    -ms-border-radius: 0;
+			border-radius: 0;
+}
+/* Booked */
+.booked-calendar-shortcode-wrap .booked-calendar-wrap.small table.booked-calendar {
+	position: relative;
+	overflow: hidden;
+}
+body div.booked-calendar-wrap div.booked-calendar {
+	border-radius: 0;
+	box-shadow: none;
+	position: relative;
+}
+body div.booked-calendar-wrap div.booked-calendar .bc-body {
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #ddd;
+}
+
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row .bc-col .monthName,
+div.booked-calendar-wrap.small table.booked-calendar thead tr th .monthName,
+div.booked-calendar-wrap table.booked-calendar thead tr th .monthName {
+	font-size: 24px ;
+	letter-spacing: 0.05em;
+	line-height: 1.1em;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 0;
+}
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row .bc-col .monthName {
+	height: auto;
+}
+body div.booked-calendar-wrap.small table.booked-calendar thead th,
+body div.booked-calendar-wrap table.booked-calendar thead th {
+	padding: 1.75rem 0 0.6em !important;
+}
+body div.booked-calendar-wrap.small table.booked-calendar thead tr.days th,
+body div.booked-calendar-wrap table.booked-calendar thead tr.days th,
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row.days .bc-col  {
+	padding: 0.8rem 0 !important;
+}
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row .bc-col .monthName .backToMonth,
+div.booked-calendar-wrap.small table.booked-calendar thead tr th .monthName .backToMonth,
+div.booked-calendar-wrap table.booked-calendar thead tr th .monthName .backToMonth {
+	font-size: 14px;
+	display: block;
+	padding-left: 0;
+	text-transform: none;
+}
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row .bc-col .monthName .backToMonth {
+	text-align: center;
+}
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row .bc-col .page-right, 
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row .bc-col .page-left {
+	font-size: 1rem;
+}
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row .bc-col .page-right i:before,
+div.booked-calendar-wrap.small table.booked-calendar thead tr th a.page-right i.booked-icon-arrow-right:before,
+div.booked-calendar-wrap table.booked-calendar thead tr th a.page-right i.booked-icon-arrow-right:before {
+	content: '\E92B';
+	font-family: 'fontello';
+}
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row .bc-col .page-left i:before,
+div.booked-calendar-wrap.small table.booked-calendar thead tr th a.page-left i.booked-icon-arrow-left:before,
+div.booked-calendar-wrap table.booked-calendar thead tr th a.page-left i.booked-icon-arrow-left:before {
+	content: '\E92A';
+	font-family: 'fontello';
+}
+div.booked-calendar-wrap.small table.booked-calendar thead th .page-right,
+div.booked-calendar-wrap.small table.booked-calendar thead th .page-left,
+div.booked-calendar-wrap table.booked-calendar thead th .page-right,
+div.booked-calendar-wrap table.booked-calendar thead th .page-left {
+	margin-top: 0.1rem;
+}
+body div.booked-calendar-wrap div.booked-calendar .bc-head .bc-row.days .bc-col,
+div.booked-calendar-wrap.small table.booked-calendar thead tr.days th,
+div.booked-calendar-wrap table.booked-calendar thead tr.days th {
+	font-size: 12px;
+	line-height: 1.2em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+body .booked-calendar-wrap.small table.booked-calendar td {
+	font-size: 16px;
+}
+div.booked-calendar-wrap.small table.booked-calendar tr.week td.active .date .number,
+div.booked-calendar-wrap table.booked-calendar tr.week td.active .date .number {
+	transform: none;
+}
+body div.booked-calendar-wrap div.booked-calendar .bc-body .bc-row.week .bc-col.today .date span {
+	box-shadow: none;
+}
+body table.booked-calendar td:hover .date.tooltipster span,
+table.booked-calendar tbody td.today .date span,
+.booked-calendar-wrap.small table.booked-calendar tbody tr td.prev-date.today .date {
+	position: relative;
+	z-index: 1;
+}
+.booked-calendar-wrap.small table.booked-calendar thead tr.days th,
+.booked-calendar-wrap.small table.booked-calendar thead th,
+.booked-calendar-wrap table.booked-calendar thead tr.days th,
+.booked-calendar-wrap table.booked-calendar thead th {
+	border: none !important;
+}
+
+body .booked-calendar-wrap.small .booked-appt-list {
+	max-height: 85px;
+	overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px 20px 10px;
+}
+
+body .booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people button {
+	padding: 7px 0;
+    line-height: 1.5;
+}
+body div.booked-calendar-wrap.small .booked-appt-list h2,
+body .booked-calendar-wrap.small .booked-appt-list h2 {
+	font-size: 1em;
+}
+body div.booked-calendar-wrap.small .booked-appt-list h2 {
+	margin-bottom: 10px;
+}
+body div.booked-calendar-wrap.small .booked-appt-list {
+	padding: 15px 20px 10px;
+}
+body div.booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people button.button .button-timeslot,
+body .booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people button .button-timeslot {
+	font-size: 0.8rem;
+}
+body div.booked-calendar-wrap.small .booked-appt-list .timeslot .timeslot-people button.button .spots-available {
+	padding: 5px 0 3px;
+}
+
+body .booked-appt-list .timeslot:hover{
+	background: transparent;
+}
+
+body .booked-appt-list .timeslot .spots-available{
+	font-size: 12px;
+}
+
+body .booked-calendar-wrap .booked-calendar .booked-appt-list{
+	max-height: 150px;
+	overflow-y: auto;
+}
+
+body .booked-calendar-wrap.small .booked-calendar .booked-appt-list{
+	max-height: 100px;
+}

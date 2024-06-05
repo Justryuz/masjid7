@@ -1,0 +1,172 @@
+/* ThemeREX Donations styles
+----------------------------------------------------------------- */
+
+.post-type-archive-donation .page-header,
+.tax-donation_category .page-header {
+	display: none;
+}
+
+/* Donations Info */
+.sc_donations_info,
+.sc_donations_data {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.sc_donations_info .sc_donations_featured {     order: 1;-webkit-order: 1;-ms-flex-order: 1;   }
+.sc_donations_info .sc_donations_title {        order: 2;-webkit-order: 2;-ms-flex-order: 2;   }
+.sc_donations_info .sc_donations_excerpt {      order: 3;-webkit-order: 3;-ms-flex-order: 3;   }
+.sc_donations_info .sc_donations_data {         order: 4;-webkit-order: 4;-ms-flex-order: 4;   }
+.sc_donations_info .sc_donations_supporters {   order: 5;-webkit-order: 5;-ms-flex-order: 5;   }
+
+.sc_donations_info .sc_donations_data .sc_donations_scale{  order: 1;-webkit-order: 1;-ms-flex-order: 1;   }
+.sc_donations_info .sc_donations_data .sc_donations_goal{   order: 2;-webkit-order: 2;-ms-flex-order: 2;   }
+.sc_donations_info .sc_donations_data .sc_donations_raised{ order: 3;-webkit-order: 3;-ms-flex-order: 3;   }
+
+.sc_donations_info .sc_donations_scale_raised {
+    height: 7px;
+    position: static;
+}
+.sc_donations_info .sc_donations_scale {
+	position:relative
+}
+.sc_donations_info .sc_donations_scale_raised .sc_donations_data_label {
+	display:block;
+}
+.sc_donations_info .sc_donations_goal .sc_donations_data_label {
+	display:none;
+}
+.sc_donations_info .sc_donations_title {
+	font-size: 1.5em;
+	margin: 1.3em 0 0;
+}
+.sc_donations_info .sc_donations_data {
+    margin: 1.5em 0 0;
+}
+.sc_donations_info .sc_donations_data .sc_donations_goal {
+	margin-top: 0.5em;
+}
+.sc_donations_info .sc_donations_scale_raised .sc_donations_data_label,
+.sc_donations_info .sc_donations_goal .sc_donations_data_number,
+.sc_donations_info .sc_donations_data_percent {
+	font-weight: bold;
+}
+.sc_donations_info .sc_donations_data_percent {
+	font-size: 1.125em;
+}
+
+
+/* Single Donation */
+.post_type_donation.post_item_single .post_sidebar {
+    width: 43%;
+    float: left;
+    padding: 1em;
+    margin-right: 1%;
+}
+.post_type_donation .post_raised_title,
+.post_type_donation .post_goal_title {
+	margin: 1.1em 0 0;
+}
+.post_type_donation.post_item_single .post_sidebar .post_raised .post_raised_amount {
+    display: block;
+    padding: 0.374em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0.57em;
+    font-size: 1.25em;
+}
+.post_type_donation.post_item_single .post_sidebar .post_supporters {
+    margin-top: 2.75em;
+    padding-top: 0.7em;
+    border-top: 1px dotted #ddd;
+}
+.post_type_donation.post_item_single .post_supporters_title {
+	font-size: 1.125em;
+}
+
+.post_type_donation.post_item_single .post_body {
+    width: 56%;
+    float: left;
+}
+.post_type_donation .entry-title {
+	font-size:3em;
+}
+.post_type_donation .post_info {
+	font-size: 0.875em;
+	margin: 0.7em 0 1.6em;
+}
+.post_type_donation .sc_donations_form_label {
+	display:none;
+}
+.post_type_donation .sc_donations_form_label[for="sc_donations_form_amount_5"]{
+	display:block;
+	font-weight: bold;
+	margin-bottom: 0.25em;
+}
+.post_type_donation .sc_donations_form {
+    margin: 1.4em 0 2em;
+}
+.sc_donations_form_field_note {
+	border-radius: 6px;
+}
+.post_type_donation.post_item_single .post_footer {
+	display: none;
+}
+
+.single-donation .nav-links {
+	padding-top: 5em;
+	margin-top: 1em;
+	border-top: 1px solid;
+}
+.single-donation .nav-links a {
+    display: block;
+    padding: 0 0.1em 0.2em 4em;
+    border: none;
+    background-color: transparent;
+    text-transform: none;
+    position: relative;
+}
+.single-donation .nav-links a:hover {
+    background-color: transparent;	
+}
+.single-donation .nav-links .meta-nav {
+	font-size: 0.875em;
+}
+.single-donation .nav-links .post-title {
+	font-size: 1.125em;
+}
+.single-donation .nav-links a:before {
+	content: '\E837';
+	font-family: 'fontello';
+	display: inline-block;
+	width: 3.125em;
+	height: 3.125em;
+	line-height: 3.125em;
+	text-align:center;
+	font-weight: bold;
+	position:absolute;
+	left: 0;
+	top: 0.1em;
+	border-radius: 6px;	
+	-webkit-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+}
+.single-donation .nav-links .nav-next a {
+	padding-left: 0.1em;
+	padding-right: 4em;
+	text-align: right;
+}
+.single-donation .nav-links .nav-next a:before {
+	content: '\E836';
+	left: auto;
+	right: 0;
+}
+
+/* Archive/Blog */
+.content > .post_type_donation + .post_type_donation {
+    margin-top: 6em;
+}

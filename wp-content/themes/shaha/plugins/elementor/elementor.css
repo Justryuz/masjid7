@@ -1,0 +1,96 @@
+/* Elementor styles
+----------------------------------------------------------------- */
+/* Add negative margins to the our post container to align left and right side of the post content and header/footer */
+.post_content > .elementor {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+/* Add margins to "No Gap" on fullscreen for compensation of the previous rule */
+.body_style_fullscreen .post_content > .elementor .elementor-section.elementor-section-full_width > .elementor-container.elementor-column-gap-no {
+	margin-left:  15px;
+	margin-right: 15px;
+}
+
+/* Default Elementor's grid */
+.elementor-column-gap-narrow > .elementor-row > .elementor-column > .elementor-element-populated,
+.elementor-column-gap-narrow > .elementor-column > .elementor-element-populated {
+	padding: 5px;
+}
+.elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated,
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+	padding: 10px;
+}
+
+.elementor-column-gap-extended > .elementor-column > .elementor-element-populated {
+	padding: 15px;
+}
+.elementor-column-gap-wide > .elementor-row > .elementor-column > .elementor-element-populated,
+.elementor-column-gap-wide > .elementor-column > .elementor-element-populated {
+	padding: 20px;
+}
+.elementor-column-gap-wider > .elementor-row > .elementor-column > .elementor-element-populated,
+.elementor-column-gap-wider > .elementor-column > .elementor-element-populated {
+	padding: 30px;
+}
+
+.elementor-container > .elementor-column > .elementor-element-populated {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* Elementor 2.5.0 */
+/* Fix: align items in columns */
+.elementor-section-content-top .elementor-widget-wrap{
+	align-items: flex-start;
+}
+.elementor-section-content-middle .elementor-widget-wrap{
+	align-items: center;
+}
+.elementor-section-content-bottom .elementor-widget-wrap{
+	align-items: flex-end;
+}
+
+/* Horizontal align items in columns */
+.sc_content_align_left[class*="sc_inner_width_"],
+.sc_content_align_left.elementor-column .elementor-widget-wrap {
+	justify-content: flex-start;
+}
+.sc_content_align_center[class*="sc_inner_width_"],
+.sc_content_align_center.elementor-column .elementor-widget-wrap {
+	justify-content: center;
+}
+.sc_content_align_right[class*="sc_inner_width_"],
+.sc_content_align_right.elementor-column .elementor-widget-wrap {
+	justify-content: flex-end;
+}
+/* Text editor */
+.elementor-text-editor p:last-child {
+	margin-bottom: 0;
+}
+/* Fix elementor V.3.0.0 */
+.elementor-widget-divider .elementor-divider {
+	font-size: 0;
+}
+.elementor-widget:not(:last-child) {
+	margin-bottom: 0;
+}
+
+/* Heading */
+.elementor-heading-title span {
+	font-weight: 700;
+}
+
+/* Counter */
+.elementor-widget-counter .elementor-counter-number-wrapper {
+	font-size: 3.907em;
+	line-height: 1.2em;
+	font-weight: 700;
+}
+.elementor-widget-counter .elementor-counter-title {
+	font-size: 1.125em;
+	font-weight: 700;
+	line-height: 1.25em;
+	font-style: normal;
+	text-transform: none;
+	letter-spacing: 0;
+}

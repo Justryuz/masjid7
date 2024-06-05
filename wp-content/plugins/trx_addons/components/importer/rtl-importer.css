@@ -1,0 +1,13 @@
+.trx_importer_section{
+	float: right;
+}
+
+.trx_exporter_section {
+	float: left;
+	margin: 2em 0 0 2em;
+}
+
+.trx_importer_advanced_settings_title:after {
+	right: auto;
+	left: 1em;
+}

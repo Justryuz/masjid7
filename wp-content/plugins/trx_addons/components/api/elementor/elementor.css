@@ -1,0 +1,49 @@
+/* Elementor's Grid */
+.elementor-editor-active .elementor-inner {
+	margin-top: 0 !important;
+}
+.elementor-container > .elementor-row > .elementor-column > .elementor-element-populated,
+.elementor-container > .elementor-column > .elementor-element-populated {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* Controls */
+.elementor-editor-active .elementor.elementor-edit-mode .elementor-element > .elementor-element-overlay {
+	z-index: 100000 !important;	/* To bring up over all absolute elements */
+}
+/* Shortcode is not available */
+.trx_addons_sc_not_exists {
+	box-sizing: border-box;
+	padding: 1.5em;
+	border: 3px solid #b7084e;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#f3f3f3),to(#fff));
+	background-image: -webkit-linear-gradient(top,#f3f3f3,#fff);
+	background-image: -o-linear-gradient(top,#f3f3f3,#fff);
+	background-image: linear-gradient(180deg,#f3f3f3,#fff);
+}
+.trx_addons_sc_not_exists_title {
+	margin-top: 0;
+}
+.trx_addons_sc_not_exists_description p:last-child {
+	margin-bottom: 0;
+}
+
+/* Row type: Narrow */
+.elementor-editor-active .elementor.elementor-edit-mode .elementor-top-section.sc_layouts_row_type_narrow > .elementor-container > .elementor-row,
+.elementor-editor-active .elementor.elementor-edit-mode .elementor-top-section.sc_layouts_row_type_narrow > .elementor-container {
+	min-height: 40px;
+}
+.elementor-editor-active .sc_layouts_row_type_narrow .elementor-column-wrap.elementor-element-empty .elementor-widget-wrap,
+.elementor-editor-active .sc_layouts_row_type_narrow .elementor-widget-wrap.elementor-element-empty {
+	min-height: 30px;
+}
+/* Make rows relative to enable using absolute position in columns */
+.elementor-section {
+	position:relative;
+}
+
+/* Widget Text Editor */
+.elementor-widget-text-editor :last-child,
+.elementor-widget-text-editor p:last-child {
+	margin-bottom: 0;
+}
